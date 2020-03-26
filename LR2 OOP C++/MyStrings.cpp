@@ -28,11 +28,6 @@ MyStrings::MyStrings(const MyStrings& value) {
         this->str[i] = value.str[i];
     this->str[lenth] = '\0';
 }
-MyStrings::MyStrings(MyStrings&& value) {
-    this->lenth = value.lenth;
-    this->str = value.str;
-    value.str = nullptr;
-}
 
 MyStrings::~MyStrings() {
     delete[] this->str;
@@ -48,34 +43,6 @@ MyStrings& MyStrings::operator =(const MyStrings& other) {
         this->str[i] = other.str[i];
     this->str[lenth] = '\0';
     return *this;
-}
-
-MyStrings MyStrings::operator+(const MyStrings& other) {
-    MyStrings newString;
-    newString.lenth = myStrlen(this->str) + myStrlen(other.str);
-    newString.str = new char[myStrlen(this->str) + myStrlen(other.str) + 1];
-    int i;
-    for (i = 0; i < myStrlen(this->str); i++)
-        newString.str[i] = this->str[i];
-    for (int j = 0; j < myStrlen(other.str); j++, i++)
-        newString.str[i] = other.str[j];
-    newString.str[myStrlen(this->str) + myStrlen(other.str)] = '\0';
-    return newString;
-}
-
-bool MyStrings::operator ==(const MyStrings& other) 
-{
-    if (this->lenth == other.lenth) {
-        for (int i = 0; i < this->lenth; i++) {
-            if (this->str[i] != other.str[i]) return false;
-        }
-        return true;
-    }
-    return false;
-}
-
-bool MyStrings::operator !=(const MyStrings& other) {
-    return !(this->operator==(other));
 }
 
 char& MyStrings::operator [](int num) {
@@ -103,11 +70,6 @@ MyContStrings::MyContStrings(const MyContStrings& value) {
     for (int i = 0; i < this->clv; i++)
         this->text[i] = value.text[i];
 }
-MyContStrings::MyContStrings(MyContStrings&& value) {
-    this->text = value.text;
-    this->clv = value.clv;
-    value.text = nullptr;
-}
 MyContStrings::~MyContStrings() {
     delete[] this->text;
 }
@@ -119,7 +81,6 @@ void MyContStrings::Print() {
 
 MyContStrings& MyContStrings::addStr(MyStrings str1, int position) {
     MyContStrings newContainer;
-    this->clv++;
     newContainer.text = new MyStrings[this->clv];
     for (int i = 0; i < this->clv; i++) {
         if (i == position) newContainer.text[position] = str1;
@@ -130,6 +91,7 @@ MyContStrings& MyContStrings::addStr(MyStrings str1, int position) {
     for (int i = 0; i < this->clv; i++) {
         this->text[i] = newContainer.text[i];
     }
+    this->clv++;
     return *this;
 }
 
@@ -138,8 +100,7 @@ MyContStrings& MyContStrings::delStr(int position) {
     if (clv != 1) {
         newContainer.text = new MyStrings[this->clv - 1];
         for (int i = 0; i < this->clv - 1; i++) {
-            if (i < position-1) newContainer.text[i] = this->text[i];
-            else newContainer.text[i] = this->text[i + 1];
+            newContainer.text[i] = this->text[i];
         }
         this->clv--;
         *(this->text) = *(newContainer.text);
@@ -149,11 +110,9 @@ MyContStrings& MyContStrings::delStr(int position) {
 }
 
 MyContStrings& MyContStrings::cleanStr() {
-    MyContStrings newContainer;
-    newContainer.text = new MyStrings[1];
-    newContainer.text[0] = "";
+    MyStrings* Text = new MyStrings[0];
+    this->text = Text;
     this->clv = 0;
-    *(this->text) = *(newContainer.text);
     return *this;
 }
 

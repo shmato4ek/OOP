@@ -9,14 +9,9 @@ public:
     MyStrings();
     MyStrings(const char*);
     MyStrings(const MyStrings&);
-    MyStrings(MyStrings&&);
     ~MyStrings();
 
     MyStrings& operator =(const MyStrings&);
-    MyStrings operator+(const MyStrings&);
-
-    bool operator ==(const MyStrings&);
-    bool operator !=(const MyStrings&);
     char& operator [](int);
     friend std::ostream& operator <<(std::ostream&, const MyStrings&);
 };
@@ -30,7 +25,6 @@ public:
     MyContStrings();
     MyContStrings(const MyStrings*);
     MyContStrings(const MyContStrings&);
-    MyContStrings(MyContStrings&&);
     ~MyContStrings();
     void Print();
 

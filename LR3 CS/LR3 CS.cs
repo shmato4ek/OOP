@@ -24,7 +24,10 @@ namespace LR3_CS
         {
             get
             {
-                return text[index];
+                if (index >= 1 && index <= this.clv)
+                    return text[index - 1];
+                else
+                    return null;
             }
         }
         public void addStr(string word)//Функция для добавления новой строчки
