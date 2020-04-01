@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LR OOP Shmatko", "LR OOP Shmatko\LR OOP Shmatko.vcxproj", "{625C78A9-E938-4B5A-9852-14BA50A8734F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LR1 OOP С++", "LR OOP Shmatko\LR OOP Shmatko.vcxproj", "{625C78A9-E938-4B5A-9852-14BA50A8734F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LR1 OOP C Sharp", "LR1 OOP C Sharp\LR1 OOP C Sharp.csproj", "{7A9B10E8-93B2-4BCB-83D9-54AA64D943CF}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR2 CS", "LR2 CS\LR2 CS.csproj", "{3A03BD3A-BE89-464E-A2D5-4CBDEAF48EDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR3 CS", "LR3 CS\LR3 CS.csproj", "{1195B813-B5B4-46C8-8B83-80009CC7C4B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR 4 CS", "LR 4 CS\LR 4 CS.csproj", "{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LR 4 C++", "LR 4 C++\LR 4 C++.vcxproj", "{DA3B79C3-804D-4D27-8700-5634F754558B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,28 @@ Global
 		{1195B813-B5B4-46C8-8B83-80009CC7C4B0}.Release|x64.Build.0 = Release|Any CPU
 		{1195B813-B5B4-46C8-8B83-80009CC7C4B0}.Release|x86.ActiveCfg = Release|Any CPU
 		{1195B813-B5B4-46C8-8B83-80009CC7C4B0}.Release|x86.Build.0 = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|x64.Build.0 = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Debug|x86.Build.0 = Debug|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|x64.ActiveCfg = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|x64.Build.0 = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|x86.ActiveCfg = Release|Any CPU
+		{3201CB0F-A98A-4F65-8953-5F6FE43BAB0C}.Release|x86.Build.0 = Release|Any CPU
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Debug|x64.ActiveCfg = Debug|x64
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Debug|x64.Build.0 = Debug|x64
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Debug|x86.Build.0 = Debug|Win32
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Release|x64.ActiveCfg = Release|x64
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Release|x64.Build.0 = Release|x64
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Release|x86.ActiveCfg = Release|Win32
+		{DA3B79C3-804D-4D27-8700-5634F754558B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
