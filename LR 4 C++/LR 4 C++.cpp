@@ -87,7 +87,7 @@ public:
     {
         for (int i = 0; i < 4; i++)
         {
-            cout << "P" << i << ": ";
+            cout << "P" << i + 1 << ": ";
             for (int j = 0; j < 2; j++)
             {
                 if (j == 0)

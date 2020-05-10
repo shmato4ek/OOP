@@ -8,7 +8,7 @@ namespace LR_4_CS
 {
     class Trapeze
     {
-        private double[,] Point = new double [4,2]; 
+        private double[,] Point = new double [4,2];
         public Trapeze ()
         {
 
