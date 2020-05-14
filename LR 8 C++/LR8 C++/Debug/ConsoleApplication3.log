@@ -1,0 +1,4 @@
+﻿E:\Visual Studio\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  ConsoleApplication3.cpp
+C:\Users\maksu\source\repos\ConsoleApplication3\ConsoleApplication3\Text.h(25,27): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication3.vcxproj -> C:\Users\maksu\source\repos\ConsoleApplication3\Debug\LR OOP C++.exe
